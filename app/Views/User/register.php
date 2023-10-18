@@ -25,6 +25,24 @@
                 </div>
                 <div class="card-body">
                     <form method="post" action="">
+                        <?= csrf_field(); ?>
+                        <!-- Daftar Sebagai -->
+                        <div class="form-row p-t-20">
+                            <label class="label label--block">Daftar Sebagai</label>
+                            <div class="p-t-15">
+                                <label class="radio-container m-r-55">User
+                                    <input type="radio" checked="checked" name="role" value="user" id="userRole" />
+                                    <span class="checkmark"></span>
+                                </label>
+                                <label class="radio-container">Event Organizer
+                                    <input type="radio" name="role" value="eo" id="eoRole"
+                                        <?= (isset($data['role']) && $data['role'] == 'eo') ? 'checked' : ''; ?> />
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+
+
                         <!-- Nama Lengkap -->
                         <div class="form-row">
                             <div class="name">Nama Lengkap</div>
@@ -63,6 +81,22 @@
                                     <?php if (isset($validation) && $validation->getError('email')) : ?>
                                     <p class="text-danger"><?= $validation->getError('email') ?></p>
                                     <?php endif; ?>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="eoContact" style="display: none;">
+                            <!-- Kontak EO -->
+                            <div class="form-row">
+                                <div class="name">Kontak Event Organizer</div>
+                                <div class="value">
+                                    <div class="input-group">
+                                        <input class="input--style-5" type="text" name="contact"
+                                            value="<?= $data['contact'] ?? ''?>" />
+                                        <?php if (isset($validation) && $validation->getError('contact')) : ?>
+                                        <p class="text-danger"><?= $validation->getError('contact') ?></p>
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -121,20 +155,6 @@
                             </div>
                         </div>
 
-                        <!-- Daftar Sebagai -->
-                        <div class="form-row p-t-20">
-                            <label class="label label--block">Daftar Sebagai</label>
-                            <div class="p-t-15">
-                                <label class="radio-container m-r-55">User
-                                    <input type="radio" checked="checked" name="role" value="user" />
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="radio-container">Event Organizer
-                                    <input type="radio" name="role" value="eo" />
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
-                        </div>
 
                         <div>
                             <button class="btn btn--radius-2 btn--red" type="submit">Register</button>
@@ -144,6 +164,27 @@
             </div>
         </div>
     </div>
+    <script>
+    // Fungsi untuk menanggapi perubahan pada radio button "Daftar Sebagai"
+    function handleRoleChange() {
+        const eoContact = document.getElementById('eoContact');
+        const eoRole = document.getElementById('eoRole');
+
+        // Jika pilihan "Event Organizer" dipilih, tampilkan bagian kontak EO
+        if (eoRole.checked) {
+            eoContact.style.display = 'block';
+        } else {
+            eoContact.style.display = 'none';
+        }
+    }
+
+    // Tambahkan event listener untuk memanggil fungsi handleRoleChange saat radio button berubah
+    document.getElementById('userRole').addEventListener('change', handleRoleChange);
+    document.getElementById('eoRole').addEventListener('change', handleRoleChange);
+
+    // Panggil fungsi handleRoleChange saat halaman dimuat untuk menanggapi kondisi awal
+    handleRoleChange();
+    </script>
 </body>
 
 </html>
