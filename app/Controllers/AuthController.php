@@ -5,7 +5,7 @@ namespace App\Controllers;
 use App\Models\EoModel;
 use App\Models\UserModel;
 
-class UserController extends BaseController
+class AuthController extends BaseController
 {
 
     protected $userModel;
@@ -19,7 +19,7 @@ class UserController extends BaseController
 
     public function register(): string
     {
-        return view('User/register');
+        return view('auth/register');
     }
 
     public function postRegister(){      
@@ -44,9 +44,9 @@ class UserController extends BaseController
                     'contact' => $this->request->getVar('contact')
                 ]);
             }
-            return redirect()->to('users/login');
+            return redirect()->to('auth/login');
         } 
-        return view('User/register', [
+        return view('auth/register', [
             'validation' => $this->validator,
             'data' => $data
         ]);
@@ -69,6 +69,8 @@ class UserController extends BaseController
     }
 
     public function login(): string{
-        return view('User/login');
+        return view('auth/login');
     }
+
+    
 }
