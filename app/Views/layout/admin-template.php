@@ -14,6 +14,8 @@
     <link href="<?= base_url(); ?>/assets/css/bootstrap-material-design.min.css" rel="stylesheet" type="text/css" />
     <link href="<?= base_url(); ?>/assets/css/icons.css" rel="stylesheet" type="text/css" />
     <link href="<?= base_url(); ?>/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
     <!-- render css -->
     <?= self::renderSection('css');?>
 </head>
@@ -30,10 +32,10 @@
 
     <!-- render content -->
     <?= self::renderSection('content');?>
-    
+
     <!-- include footer -->
     <?= self::include("layout/admin-footer") ?>
-    
+
     <!-- jQuery  -->
     <script src="<?= base_url(); ?>/assets/js/jquery.min.js"></script>
     <script src="<?= base_url(); ?>/assets/js/popper.min.js"></script>

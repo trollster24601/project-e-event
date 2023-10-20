@@ -1,3 +1,15 @@
+<?= self::section('css');?>
+<!--Morris Chart CSS -->
+<link href="<?= base_url(); ?>/assets/plugins/fullcalendar/vanillaCalendar.css" rel="stylesheet" type="text/css" />
+<link href="<?= base_url(); ?>/assets/plugins/jvectormap/jquery-jvectormap-2.0.2.css" rel="stylesheet">
+<link rel="stylesheet" href="<?= base_url(); ?>/assets/plugins/chartist/css/chartist.min.css">
+<link rel="stylesheet" href="<?= base_url(); ?>/assets/plugins/morris/morris.css">
+<link rel="stylesheet" href="<?= base_url(); ?>/assets/plugins/metro/MetroJs.min.css">
+
+<link href="<?= base_url(); ?>/assets/plugins/carousel/owl.carousel.min.css" rel="stylesheet">
+<link href="<?= base_url(); ?>/assets/plugins/carousel/owl.theme.default.min.css" rel="stylesheet">
+<?= self::endSection('css');?>
+
 <?= self::extend('layout/admin-template') ?>
 <?= self::section('content');?>
 <div class="wrapper dashborad-h">
@@ -8,7 +20,7 @@
                 <div class="page-title-box">
                     <div class="btn-group m-0 pull-right">
                         <ol class="breadcrumb hide-phone p-0 m-0">
-                            <li class="breadcrumb-item"><a href="#">Urora</a></li>
+                            <li class="breadcrumb-item"><a href="#">Event</a></li>
                             <li class="breadcrumb-item active">Dashboard</li>
                         </ol>
                     </div>
@@ -17,6 +29,7 @@
             </div>
         </div>
         <!-- end page title end breadcrumb -->
+        <h6 class="text-secondary mt-0 pt-0">Jum'at, 16 November 2023</h6>
         <div class="row">
             <!-- Column -->
             <div class="col-sm-12 col-md-6 col-xl-3">
@@ -30,8 +43,8 @@
                             </div>
                             <div class="col-8 ml-auto align-self-center text-center">
                                 <div class="m-l-10 text-white float-right">
-                                    <h5 class="mt-0 round-inner">18090</h5>
-                                    <p class="mb-0 ">Visits Today</p>
+                                    <h5 class="mt-0 round-inner">3</h5>
+                                    <p class="mb-0 ">Event Berlangsung</p>
                                 </div>
                             </div>
                         </div>
@@ -52,7 +65,7 @@
                             <div class="col-8 text-center ml-auto align-self-center">
                                 <div class="m-l-10 text-white float-right">
                                     <h5 class="mt-0 round-inner">562</h5>
-                                    <p class="mb-0 ">New Users</p>
+                                    <p class="mb-0 ">Peserta Pendaftar</p>
                                 </div>
                             </div>
                         </div>
@@ -72,8 +85,8 @@
                             </div>
                             <div class="col-8 ml-auto align-self-center text-center">
                                 <div class="m-l-10 text-white float-right">
-                                    <h5 class="mt-0 round-inner">7514</h5>
-                                    <p class="mb-0 ">New Orders</p>
+                                    <h5 class="mt-0 round-inner">14</h5>
+                                    <p class="mb-0 ">Event Mendatang</p>
                                 </div>
                             </div>
                         </div>
@@ -93,8 +106,8 @@
                             </div>
                             <div class="col-8 ml-auto align-self-center text-center">
                                 <div class="m-l-10 text-white float-right">
-                                    <h5 class="mt-0 round-inner">$32874</h5>
-                                    <p class="mb-0">Total Sales</p>
+                                    <h5 class="mt-0 round-inner">Rp 3.874.000</h5>
+                                    <p class="mb-0">Pendapatan Tiket</p>
                                 </div>
                             </div>
                         </div>
@@ -271,7 +284,7 @@
             <div class="col-md-12 col-xl-3">
                 <div class="card m-b-30 border-0">
                     <div class="card-body  text-center">
-                        <img src="<?= base_url(); ?>assets/images/users/avatar-5.jpg" alt=""
+                        <img src="<?= base_url(); ?>/assets/images/users/avatar-5.jpg" alt=""
                             class="rounded-circle mx-auto d-block w-25">
 
                         <div class="text-center pt-1">
@@ -319,14 +332,14 @@
                                 <tbody>
                                     <tr>
                                         <td>
-                                            <img class="" src="<?= base_url(); ?>assets/images/products/pro1.png"
+                                            <img class="" src="<?= base_url(); ?>/assets/images/products/pro1.png"
                                                 alt="user" width="40">
                                         </td>
                                         <td>
                                             Chair
                                         </td>
                                         <td>
-                                            <img src="<?= base_url(); ?>assets/images/flags/us_flag.jpg" alt=""
+                                            <img src="<?= base_url(); ?>/assets/images/flags/us_flag.jpg" alt=""
                                                 width="30">
                                         </td>
                                         <td>3/09/2018 4:29 PM</td>
@@ -338,14 +351,14 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img class="" src="<?= base_url(); ?>assets/images/products/pro2.png"
+                                            <img class="" src="<?= base_url(); ?>/assets/images/products/pro2.png"
                                                 alt="user" width="40">
                                         </td>
                                         <td>
                                             Mobile
                                         </td>
                                         <td>
-                                            <img src="<?= base_url(); ?>assets/images/flags/french_flag.jpg" alt=""
+                                            <img src="<?= base_url(); ?>/assets/images/flags/french_flag.jpg" alt=""
                                                 width="30">
                                         </td>
                                         <td>3/15/2018 1:09 PM</td>
@@ -357,14 +370,14 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img class="" src="<?= base_url(); ?>assets/images/products/pro3.png"
+                                            <img class="" src="<?= base_url(); ?>/assets/images/products/pro3.png"
                                                 alt="user" width="40">
                                         </td>
                                         <td>
                                             LED
                                         </td>
                                         <td>
-                                            <img src="<?= base_url(); ?>assets/images/flags/spain_flag.jpg" alt=""
+                                            <img src="<?= base_url(); ?>/assets/images/flags/spain_flag.jpg" alt=""
                                                 width="30">
                                         </td>
                                         <td>3/18/2018 12:09 PM</td>
@@ -376,14 +389,14 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img class="" src="<?= base_url(); ?>assets/images/products/pro4.png"
+                                            <img class="" src="<?= base_url(); ?>/assets/images/products/pro4.png"
                                                 alt="user" width="40">
                                         </td>
                                         <td>
                                             Chair
                                         </td>
                                         <td>
-                                            <img src="<?= base_url(); ?>assets/images/flags/russia_flag.jpg" alt=""
+                                            <img src="<?= base_url(); ?>/assets/images/flags/russia_flag.jpg" alt=""
                                                 width="30">
                                         </td>
                                         <td>3/27/2018 8:27 PM</td>
@@ -395,14 +408,14 @@
                                     </tr>
                                     <tr>
                                         <td>
-                                            <img class="" src="<?= base_url(); ?>assets/images/products/pro2.png"
+                                            <img class="" src="<?= base_url(); ?>/assets/images/products/pro2.png"
                                                 alt="user" width="40">
                                         </td>
                                         <td>
                                             Mobile
                                         </td>
                                         <td>
-                                            <img src="<?= base_url(); ?>assets/images/flags/italy_flag.jpg" alt=""
+                                            <img src="<?= base_url(); ?>/assets/images/flags/italy_flag.jpg" alt=""
                                                 width="30">
                                         </td>
                                         <td>4/01/2018 5:09 PM</td>
@@ -438,14 +451,14 @@
                                     <tr>
                                         <td>
                                             <img class="rounded-circle"
-                                                src="<?= base_url(); ?>assets/images/users/avatar-2.jpg" alt="user"
+                                                src="<?= base_url(); ?>/assets/images/users/avatar-2.jpg" alt="user"
                                                 width="40">
                                         </td>
                                         <td>
                                             <a href="javascript:void(0);">Ruby T. Curd</a>
                                         </td>
                                         <td>
-                                            <img src="<?= base_url(); ?>assets/images/flags/us_flag.jpg" alt=""
+                                            <img src="<?= base_url(); ?>/assets/images/flags/us_flag.jpg" alt=""
                                                 width="30">
                                         </td>
                                         <td>
@@ -478,14 +491,14 @@
                                     <tr>
                                         <td>
                                             <img class="rounded-circle"
-                                                src="<?= base_url(); ?>assets/images/users/avatar-3.jpg" alt="user"
+                                                src="<?= base_url(); ?>/assets/images/users/avatar-3.jpg" alt="user"
                                                 width="40">
                                         </td>
                                         <td>
                                             <a href="javascript:void(0);">William A. Johnson</a>
                                         </td>
                                         <td>
-                                            <img src="<?= base_url(); ?>assets/images/flags/french_flag.jpg" alt=""
+                                            <img src="<?= base_url(); ?>/assets/images/flags/french_flag.jpg" alt=""
                                                 width="30">
                                         </td>
                                         <td>
@@ -518,14 +531,14 @@
                                     <tr>
                                         <td>
                                             <img class="rounded-circle"
-                                                src="<?= base_url(); ?>assets/images/users/avatar-4.jpg" alt="user"
+                                                src="<?= base_url(); ?>/assets/images/users/avatar-4.jpg" alt="user"
                                                 width="40">
                                         </td>
                                         <td>
                                             <a href="javascript:void(0);">Bobby M. Gray</a>
                                         </td>
                                         <td>
-                                            <img src="<?= base_url(); ?>assets/images/flags/spain_flag.jpg" alt=""
+                                            <img src="<?= base_url(); ?>/assets/images/flags/spain_flag.jpg" alt=""
                                                 width="30">
                                         </td>
                                         <td>
@@ -558,14 +571,14 @@
                                     <tr>
                                         <td>
                                             <img class="rounded-circle"
-                                                src="<?= base_url(); ?>assets/images/users/avatar-5.jpg" alt="user"
+                                                src="<?= base_url(); ?>/assets/images/users/avatar-5.jpg" alt="user"
                                                 width="40">
                                         </td>
                                         <td>
                                             <a href="javascript:void(0);">Robert N. Carlile</a>
                                         </td>
                                         <td>
-                                            <img src="<?= base_url(); ?>assets/images/flags/russia_flag.jpg" alt=""
+                                            <img src="<?= base_url(); ?>/assets/images/flags/russia_flag.jpg" alt=""
                                                 width="30">
                                         </td>
                                         <td>
@@ -598,14 +611,14 @@
                                     <tr>
                                         <td>
                                             <img class="rounded-circle"
-                                                src="<?= base_url(); ?>assets/images/users/avatar-6.jpg" alt="user"
+                                                src="<?= base_url(); ?>/assets/images/users/avatar-6.jpg" alt="user"
                                                 width="40">
                                         </td>
                                         <td>
                                             <a href="javascript:void(0);">Ruby T. Curd</a>
                                         </td>
                                         <td>
-                                            <img src="<?= base_url(); ?>assets/images/flags/italy_flag.jpg" alt=""
+                                            <img src="<?= base_url(); ?>/assets/images/flags/italy_flag.jpg" alt=""
                                                 width="30">
                                         </td>
                                         <td>
@@ -649,7 +662,7 @@
                         <div class="owl-carousel">
                             <div class="owl-inner row">
                                 <div class="col-2">
-                                    <img src="<?= base_url(); ?>assets/images/users/avatar-1.jpg" alt=""
+                                    <img src="<?= base_url(); ?>/assets/images/users/avatar-1.jpg" alt=""
                                         class="img-fluid rounded-circle">
                                 </div>
                                 <div class="col-10">
@@ -660,7 +673,7 @@
                             </div>
                             <div class="owl-inner row">
                                 <div class="col-2">
-                                    <img src="<?= base_url(); ?>assets/images/users/avatar-2.jpg" alt=""
+                                    <img src="<?= base_url(); ?>/assets/images/users/avatar-2.jpg" alt=""
                                         class="img-fluid rounded-circle">
                                 </div>
                                 <div class="col-10">
@@ -671,7 +684,7 @@
                             </div>
                             <div class="owl-inner row">
                                 <div class="col-2">
-                                    <img src="<?= base_url(); ?>assets/images/users/avatar-3.jpg" alt=""
+                                    <img src="<?= base_url(); ?>/assets/images/users/avatar-3.jpg" alt=""
                                         class="img-fluid rounded-circle">
                                 </div>
                                 <div class="col-10">
@@ -682,7 +695,7 @@
                             </div>
                             <div class="owl-inner row">
                                 <div class="col-2">
-                                    <img src="<?= base_url(); ?>assets/images/users/avatar-4.jpg" alt=""
+                                    <img src="<?= base_url(); ?>/assets/images/users/avatar-4.jpg" alt=""
                                         class="img-fluid rounded-circle">
                                 </div>
                                 <div class="col-10">
@@ -786,3 +799,16 @@
     </div> <!-- end container -->
 </div>
 <?= self::endSection('content');?>
+<?= self::section('js'); ?>
+<script src="<?= base_url(); ?>/assets/plugins/carousel/owl.carousel.min.js"></script>
+<script src="<?= base_url(); ?>/assets/plugins/fullcalendar/vanillaCalendar.js"></script>
+<script src="<?= base_url(); ?>/assets/plugins/peity/jquery.peity.min.js"></script>
+<script src="<?= base_url(); ?>/assets/plugins/jvectormap/jquery-jvectormap-2.0.2.min.js"></script>
+<script src="<?= base_url(); ?>/assets/plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+<script src="<?= base_url(); ?>/assets/plugins/chartist/js/chartist.min.js"></script>
+<script src="<?= base_url(); ?>/assets/plugins/chartist/js/chartist-plugin-tooltip.min.js"></script>
+<script src="<?= base_url(); ?>/assets/plugins/metro/MetroJs.min.js"></script>
+<script src="<?= base_url(); ?>/assets/plugins/raphael/raphael.min.js"></script>
+<script src="<?= base_url(); ?>/assets/plugins/morris/morris.min.js"></script>
+<script src="<?= base_url(); ?>/assets/pages/dashborad.js"></script>
+<?= self::endSection('js');?>
