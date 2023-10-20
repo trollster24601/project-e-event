@@ -29,6 +29,7 @@ class TransactionDetails extends Migration
             ],
             ]);
             $this->forge->addKey('unique_code', true);
+            $this->forge->addForeignKey('transaction_id', 'transactions', 'id', 'CASCADE', 'CASCADE');
             $this->forge->createTable('transaction_details');
         
     }

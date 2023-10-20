@@ -66,6 +66,7 @@ class Events extends Migration
             ],
         ]);
             $this->forge->addKey('id', true);
+            $this->forge->addForeignKey('eo_id', 'eos', 'id', 'CASCADE', 'CASCADE');
             $this->forge->createTable('events');
     }
 

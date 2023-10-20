@@ -15,8 +15,8 @@ class Transactions extends Migration
                 'auto_increment' => true,
             ],
             'user_id' => [
-                'type' => 'INT',
-                'unsigned' => true,
+                'type' => 'VARCHAR',
+                'constraint' => 50,
                
             ],
             'ticket_id' => [
@@ -37,6 +37,8 @@ class Transactions extends Migration
             ],
             ]);
             $this->forge->addKey('id', true);
+            $this->forge->addForeignKey('user_id', 'users', 'id', 'CASCADE', 'CASCADE');
+            $this->forge->addForeignKey('ticket_id', 'tickets', 'id', 'CASCADE', 'CASCADE');
             $this->forge->createTable('transactions');
         
     }

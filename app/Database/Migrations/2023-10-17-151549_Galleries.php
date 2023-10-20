@@ -25,6 +25,7 @@ class Galleries extends Migration
             ],
             ]);
             $this->forge->addKey('id', true);
+            $this->forge->addForeignKey('event_id', 'events', 'id', 'CASCADE', 'CASCADE');
             $this->forge->createTable('galleries');
         
     }
