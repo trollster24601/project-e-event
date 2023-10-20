@@ -5,8 +5,7 @@
     type="text/css" />
 <link href="<?= base_url(); ?>/assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 <!-- Responsive datatable examples -->
-<link href="<?= base_url(); ?>/assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet"
-    type="text/css" />
+<link href="<?= base_url(); ?>/assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" />
 <?= self::endSection('css') ?>
 <?= self::section('content');?>
 <div class="wrapper">
@@ -54,19 +53,24 @@
                                     <td>083142301830</td>
                                     <td>Kintap, Tanah Laut</td>
                                     <td>@ucupsurotong</td>
-                                    <td class="text-success">Approve</td>
-                                    <td style="width:111px;">
-                                        <button type='button' class='btn border btn-success p-0 px-2 m-0'
+                                    <?php if($i<5) :?>
+                                    <td class="text-primary">Menunggu</td>
+                                    <td>
+                                        <button type='button' class='py-0 rounded-lg btn border bg-success'
                                             data-bs-toggle='modal' data-bs-target='#detail'><i
-                                                class="mdi-bookmark-check"></i>
-                                            haha</button>
-                                        <button type='button' class='btn border btn-primary p-0 px-2 m-0'
-                                            data-bs-toggle='modal' data-bs-target='#edit'><i
-                                                class="bi bi-pencil-square text-light"></i></button>
-                                        <button type='button' class='btn border btn-danger p-0 px-2 m-0'
+                                                class="mdi mdi-check text-white"></i></button>
+                                        <button type='button' class='py-0 rounded-lg btn border bg-danger'
                                             data-bs-toggle='modal' data-bs-target='#delete'><i
-                                                class="bi bi-trash text-light"></i></button>
+                                                class="fa fa-close text-white"></i></button>
                                     </td>
+                                    <?php elseif($i%2==0) : ?>
+                                    <td class="text-success">Disetujui</td>
+                                    <td></td>
+                                    <?php else : ?>
+                                    <td class="text-danger">Ditolak</td>
+                                    <td></td>
+                                    <?php endif; ?>
+
                                 </tr>
                                 <?php endfor; ?>
                             </tbody>
