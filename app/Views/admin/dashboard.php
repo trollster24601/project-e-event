@@ -29,7 +29,7 @@
             </div>
         </div>
         <!-- end page title end breadcrumb -->
-        <h6 class="text-secondary mt-0 pt-0">Jum'at, 16 November 2023</h6>
+        <!-- <h6 class="text-secondary mt-0 pt-0">Jum'at, 16 November 2023</h6> -->
         <div class="row">
             <!-- Column -->
             <div class="col-sm-12 col-md-6 col-xl-3">
@@ -43,8 +43,8 @@
                             </div>
                             <div class="col-8 ml-auto align-self-center text-center">
                                 <div class="m-l-10 text-white float-right">
-                                    <h5 class="mt-0 round-inner">3</h5>
-                                    <p class="mb-0 ">Event Berlangsung</p>
+                                    <h5 class="mt-0 round-inner">13</h5>
+                                    <p class="mb-0 ">Total Event</p>
                                 </div>
                             </div>
                         </div>
@@ -59,13 +59,13 @@
                         <div class="d-flex row">
                             <div class="col-3 align-self-center">
                                 <div class="round">
-                                    <i class="mdi mdi-account-multiple-plus"></i>
+                                    <i class="mdi mdi-basket"></i>
                                 </div>
                             </div>
                             <div class="col-8 text-center ml-auto align-self-center">
                                 <div class="m-l-10 text-white float-right">
-                                    <h5 class="mt-0 round-inner">562</h5>
-                                    <p class="mb-0 ">Peserta Pendaftar</p>
+                                    <h5 class="mt-0 round-inner">5</h5>
+                                    <p class="mb-0 ">Event Mendatang</p>
                                 </div>
                             </div>
                         </div>
@@ -80,13 +80,13 @@
                         <div class="d-flex row">
                             <div class="col-3 align-self-center">
                                 <div class="round ">
-                                    <i class="mdi mdi-basket"></i>
+                                    <i class="mdi mdi-account-multiple-plus"></i>
                                 </div>
                             </div>
                             <div class="col-8 ml-auto align-self-center text-center">
                                 <div class="m-l-10 text-white float-right">
                                     <h5 class="mt-0 round-inner">14</h5>
-                                    <p class="mb-0 ">Event Mendatang</p>
+                                    <p class="mb-0 ">Total EO</p>
                                 </div>
                             </div>
                         </div>
@@ -104,10 +104,10 @@
                                     <i class="mdi mdi-calculator"></i>
                                 </div>
                             </div>
-                            <div class="col-8 ml-auto align-self-center text-center">
-                                <div class="m-l-10 text-white float-right">
-                                    <h5 class="mt-0 round-inner">Rp 3.874.000</h5>
-                                    <p class="mb-0">Pendapatan Tiket</p>
+                            <div class="col-8 ml-0 p-0 align-self-center text-center">
+                                <div class="m-l-16 text-white float-right">
+                                    <h5 class="mt-0 round-inner">Rp 34.093.000</h5>
+                                    <p class="mb-0">Pendapatan Keseluruhan</p>
                                 </div>
                             </div>
                         </div>
