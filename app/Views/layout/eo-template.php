@@ -28,13 +28,13 @@
         </div>
     </div>
     <!-- include navbar -->
-    <?= self::include("layout/admin-navbar") ?>
+    <?= self::include("layout/eo-navbar") ?>
 
     <!-- render content -->
     <?= self::renderSection('content');?>
 
     <!-- include footer -->
-    <?= self::include("layout/admin-footer") ?>
+    <?= self::include("layout/eo-footer") ?>
 
     <!-- jQuery  -->
     <script src="<?= base_url(); ?>/assets/js/jquery.min.js"></script>

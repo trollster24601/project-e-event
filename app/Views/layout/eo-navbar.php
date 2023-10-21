@@ -163,7 +163,7 @@
                 <!-- Navigation Menu-->
                 <ul class="navigation-menu text-center">
                     <li class="has-submenu">
-                        <a href="/admin/dashboard"><i class="mdi mdi-view-dashboard"></i>Dashboard</a>
+                        <a href="/eo/dashboard"><i class="mdi mdi-view-dashboard"></i>Dashboard</a>
                     </li>
 
                     <li class="has-submenu">
