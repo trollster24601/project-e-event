@@ -31,6 +31,27 @@
         <!-- end page title end breadcrumb -->
         <div class="row">
             <!-- Column -->
+            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
+                <div class="card bg-primary m-b-30">
+                    <div class="card-body">
+                        <div class="d-flex row">
+                            <div class="col-3 align-self-center">
+                                <div class="round">
+                                    <i class="mdi mdi-calculator"></i>
+                                </div>
+                            </div>
+                            <div class="col-8 ml-auto align-self-center text-center">
+                                <div class="m-l-10 text-white float-right">
+                                    <h5 class="mt-0 m-0 round-inner">Rp 37.874.000</h5>
+                                    <p class="mb-0">Total Pendapatan</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Column -->
+            <!-- Column -->
             <div class="col-sm-12 col-md-6 col-xl-3">
                 <div class="card bg-danger m-b-30">
                     <div class="card-body">
@@ -42,8 +63,8 @@
                             </div>
                             <div class="col-8 ml-auto align-self-center text-center">
                                 <div class="m-l-10 text-white float-right">
-                                    <h5 class="mt-0 round-inner">18</h5>
-                                    <p class="mb-0 ">Event Mendatang</p>
+                                    <h5 class="mt-0 round-inner">1</h5>
+                                    <p class="mb-0 ">Event Aktif</p>
                                 </div>
                             </div>
                         </div>
@@ -58,13 +79,13 @@
                         <div class="d-flex row">
                             <div class="col-3 align-self-center">
                                 <div class="round">
-                                    <i class="mdi mdi-account-multiple-plus"></i>
+                                    <i class="mdi mdi-basket"></i>
                                 </div>
                             </div>
                             <div class="col-8 text-center ml-auto align-self-center">
                                 <div class="m-l-10 text-white float-right">
-                                    <h5 class="mt-0 round-inner">562</h5>
-                                    <p class="mb-0 ">Peserta Pendaftar</p>
+                                    <h5 class="mt-0 round-inner">4</h5>
+                                    <p class="mb-0 ">Event Mendatang</p>
                                 </div>
                             </div>
                         </div>
@@ -79,34 +100,13 @@
                         <div class="d-flex row">
                             <div class="col-3 align-self-center">
                                 <div class="round ">
-                                    <i class="mdi mdi-basket"></i>
+                                    <i class="mdi mdi-account-multiple-plus"></i>
                                 </div>
                             </div>
                             <div class="col-8 ml-auto align-self-center text-center">
                                 <div class="m-l-10 text-white float-right">
-                                    <h5 class="mt-0 round-inner">614</h5>
-                                    <p class="mb-0 ">Total Tiket Terjual</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Column -->
-            <!-- Column -->
-            <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-                <div class="card bg-primary m-b-30">
-                    <div class="card-body">
-                        <div class="d-flex row">
-                            <div class="col-3 align-self-center">
-                                <div class="round">
-                                    <i class="mdi mdi-calculator"></i>
-                                </div>
-                            </div>
-                            <div class="col-8 ml-auto align-self-center text-center">
-                                <div class="m-l-10 text-white float-right">
-                                    <h5 class="mt-0 round-inner">Rp 3.874.000</h5>
-                                    <p class="mb-0">Pendapatan Tiket</p>
+                                    <h5 class="mt-0 round-inner">534</h5>
+                                    <p class="mb-0 ">Tiket Terjual</p>
                                 </div>
                             </div>
                         </div>
@@ -120,24 +120,24 @@
             <div class="col-sm-12 col-md-12 col-xl-5">
                 <div class="card m-b-30">
                     <div class="card-body metro-widget">
-                        <h5 class="header-title mt-0 pb-3">Statistics</h5>
+                        <h5 class="header-title mt-0 pb-3">Statistik Hari Ini</h5>
                         <div id="morris-bar-example"></div>
                         <div class="row text-center d-flex justify-content-around">
                             <div class="col-4">
-                                <p class="mb-0 font-14">New Orders</p>
+                                <p class="mb-0 font-14">Tiket Terjual</p>
                                 <div class="live-tile m-0 w-100" data-mode="carousel" data-direction="horizontal"
                                     data-delay="3900" data-height="10">
                                     <div>
-                                        <small class="text-muted"> today</small>
-                                        <h3 class=" text-dark">1,088
+                                        <small class="text-muted"> hari ini</small>
+                                        <h3 class=" text-dark">12
                                             <small>
                                                 <i class="mdi mdi-menu-down text-danger"></i>
                                             </small>
                                         </h3>
                                     </div>
                                     <div>
-                                        <small class="text-muted">yesterday</small>
-                                        <h3 class="text-dark">1,420
+                                        <small class="text-muted"> kemarin</small>
+                                        <h3 class="text-dark">39
                                             <small>
                                                 <i class="mdi mdi-menu-up text-success"></i>
                                             </small>
@@ -146,36 +146,36 @@
                                 </div>
                             </div>
                             <div class="col-4">
-                                <p class="mb-0 font-14">Visits</p>
+                                <p class="mb-0 font-14">Pendapatan</p>
                                 <div class="live-tile m-0 w-100" data-mode="carousel" data-direction="vertical"
                                     data-delay="3500" data-height="10">
                                     <div>
-                                        <small class="text-muted"> today</small>
-                                        <h3 class=" text-dark">1,955</h3>
+                                        <small class="text-muted"> hari ini</small>
+                                        <h3 class=" text-dark">349.000</h3>
                                     </div>
                                     <div>
-                                        <small class="text-muted">yesterday</small>
-                                        <h3 class="text-dark">2,091</h3>
+                                        <small class="text-muted"> kemarin</small>
+                                        <h3 class="text-dark">692.000</h3>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-4">
-                                <p class="mb-0 font-14">Bounce Rate</p>
+                                <p class="mb-0 font-14">Peserta Pendaftar</p>
                                 <div class="live-tile m-0 w-100" data-mode="carousel" data-direction="vertical"
                                     data-delay="4200" data-height="10">
                                     <div>
-                                        <small class="text-muted">Minmum</small>
-                                        <h3 class=" text-dark">3.8 %
+                                        <small class="text-muted"> hari ini</small>
+                                        <h3 class=" text-dark">8
                                             <small>
                                                 <i class="mdi mdi-menu-up text-success"></i>
                                             </small>
                                         </h3>
                                     </div>
                                     <div>
-                                        <small class="text-muted">Maximum</small>
-                                        <h3 class="text-dark">7.1 %
+                                        <small class="text-muted"> kemarin</small>
+                                        <h3 class="text-dark">31
                                             <small>
-                                                <i class="mdi mdi-menu-down text-danger"></i>
+                                                <i class="mdi mdi-menu-down text-danger "></i>
                                             </small>
                                         </h3>
                                     </div>
@@ -189,7 +189,7 @@
             <div class="col-md-12 col-xl-7">
                 <div class="card m-b-30">
                     <div class="card-body">
-                        <h5 class="header-title mt-0 pb-3">Revenue </h5>
+                        <h5 class="header-title mt-0 pb-3">Statistik Penjualan Tiket</h5>
                         <div id="morris-area-chart"></div>
                     </div>
                 </div>
@@ -809,5 +809,5 @@
 <script src="<?= base_url(); ?>/assets/plugins/metro/MetroJs.min.js"></script>
 <script src="<?= base_url(); ?>/assets/plugins/raphael/raphael.min.js"></script>
 <script src="<?= base_url(); ?>/assets/plugins/morris/morris.min.js"></script>
-<script src="<?= base_url(); ?>/assets/pages/dashborad.js"></script>
+<script src="<?= base_url(); ?>/assets/pages/dashborad-eo.js"></script>
 <?= self::endSection('js');?>

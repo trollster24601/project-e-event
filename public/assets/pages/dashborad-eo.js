@@ -46,6 +46,7 @@
         xLabelMargin: 10,
         yLabelMargin: 10,
         pointSize: 3,
+        parseTime: false, // Tambahkan ini
       });
     }),
     (Dashboard.prototype.init = function () {
@@ -64,16 +65,16 @@
 
       //creating area chart
       var $areaData = [
-        { y: "2011", a: 10, b: 10 },
-        { y: "2012", a: 30, b: 35 },
-        { y: "2013", a: 10, b: 25 },
-        { y: "2014", a: 55, b: 45 },
-        { y: "2015", a: 20, b: 20 },
-        { y: "2016", a: 40, b: 35 },
-        { y: "2017", a: 10, b: 25 },
-        { y: "2018", a: 25, b: 20 },
+        { y: "Event A", a: 100, b: 10 },
+        { y: "Event B", a: 300, b: 35 },
+        { y: "Event C", a: 100, b: 25 },
+        { y: "Event D", a: 550, b: 45 },
+        { y: "Event E", a: 200, b: 20 },
+        { y: "Event F", a: 400, b: 35 },
+        { y: "Event G", a: 100, b: 25 },
+        { y: "Event H", a: 250, b: 20 },
       ];
-      this.createAreaChart("morris-area-chart", 0, 0, $areaData, "y", ["a", "b"], ["Laptops A", "Iphones B"], ["#009688 ", "#3f51b5"]);
+      this.createAreaChart("morris-area-chart", 0, 0, $areaData, "y", ["a"], ["Tiket Terjual"], ["#009688 ", "#3f51b5"]);
 
       //Animating a Donut with Svg.animate
 
