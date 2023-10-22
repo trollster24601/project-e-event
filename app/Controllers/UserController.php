@@ -10,4 +10,8 @@ class UserController extends BaseController
     {
         return view('user/dashboard');
     }
+
+    public function eventDescription(){
+        return view("user/event-description");
+    }
 }
